@@ -22,7 +22,7 @@ import salesTaxes.impl.BasketFiller;
 public class BasketFillerTest {
 	@Test
 	public void trycreateBasketFiller() throws Exception, UnclosedBasketException {
-		BasketFiller bf = new BasketFiller("test.txt","itemCategory.txt");
+		BasketFiller bf = new BasketFiller( "test.txt","itemCategory.txt");
 		Basket tmpBasket;
 		String output="";
 
