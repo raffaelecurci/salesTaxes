@@ -1,5 +1,9 @@
 package salesTaxes.test;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 /**
  * <p>
  * Unit test for <b>BasketFiller</b>.
@@ -10,14 +14,10 @@ package salesTaxes.test;
  */
 
 import org.junit.Test;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-
-import java.io.IOException;
 
 import salesTaxes.exc.UnclosedBasketException;
-import salesTaxes.impl.*;
+import salesTaxes.impl.Basket;
+import salesTaxes.impl.BasketFiller;
 
 public class BasketFillerTest {
 	@Test
