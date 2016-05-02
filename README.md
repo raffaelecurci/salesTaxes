@@ -5,10 +5,11 @@ An application that writes and prints out the receipt details for shopping baske
 
 This example demonstrates:
 
+* Output production as requested by hardcoding input inside test
 * Unit tests written with [JUnit 4](http://junit.org/)
 * Integration tests written with [JUnit 4](http://junit.org/)
 * Code coverage reports via [Cobertura](http://cobertura.github.io/cobertura/)
-* Javadoc Production
+* Javadoc Production via [MJAVADOC](http://maven.apache.org/plugins/maven-javadoc-plugin/)
 * A Maven build that puts it all together
 
 Running the tests
@@ -18,6 +19,7 @@ Running the tests
 * To generate (unit test) code coverage reports, call `mvn cobertura:cobertura`, and point a browser at the output in `target/site/cobertura/`
 * To generate application javadoc, call `javadoc:javadoc`, and point a browser at the output in `target/site/apidocs/`
 
+* To run the tests remotly point the browser at [https://travis-ci.org/raffaelecurci/salesTaxes]
 Conventions
 -----------
 
