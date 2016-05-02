@@ -1,0 +1,8 @@
+book,books
+chocolate bar,food
+packet of headache pills,medical products
+music CD,BaseSaleTaxApplicable
+imported box of chocolates,food
+imported bottle of perfume,BaseSaleTaxApplicable
+bottle of perfume,BaseSaleTaxApplicable
+box of imported chocolates,food
