@@ -19,7 +19,7 @@ Running the tests
 * To generate (unit test) code coverage reports, call `mvn cobertura:cobertura`, and point a browser at the output in `target/site/cobertura/`
 * To generate application javadoc, call `javadoc:javadoc`, and point a browser at the output in `target/site/apidocs/`
 
-* To run the tests remotly point the browser at [https://travis-ci.org/raffaelecurci/salesTaxes]
+* To view the build and tests results remotely point the browser at [https://travis-ci.org/raffaelecurci/salesTaxes]
 Conventions
 -----------
 
