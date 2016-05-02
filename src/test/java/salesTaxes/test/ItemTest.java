@@ -40,7 +40,83 @@ public class ItemTest {
 		assertThat(check, is(equalTo(itemCheck)));
 	}
 	
-	@Test
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnNoBaseSalesTax() {
+		Item item = new Item();
+//		item.setBaseSaleTaxExemption(false);
+		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.getTotalTaxAmount();
+	}
+	
+	
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnNoImportTax() {
+		Item item = new Item();
+		item.setBaseSaleTaxExemption(false);
+//		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.getTotalTaxAmount();
+	}
+	
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnNoBaseSalesTaxOnGetImportTax() {
+		Item item = new Item();
+//		item.setBaseSaleTaxExemption(false);
+		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.getImportTax();
+	}
+	
+	
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnNoImportTaxOnGetImportTax() {
+		Item item = new Item();
+		item.setBaseSaleTaxExemption(false);
+//		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.getImportTax();
+	}
+	
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnNoBaseSalesTaxOnGetBaseSaleTax() {
+		Item item = new Item();
+//		item.setBaseSaleTaxExemption(false);
+		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.getBaseSaleTax();
+	}
+	
+	
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnNoImportTaxOnGetBaseSaleTax() {
+		Item item = new Item();
+		item.setBaseSaleTaxExemption(false);
+//		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.getBaseSaleTax();
+	}
+	
+	
+	
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnGetTotalTaxAmountNoImportTax() {
+		Item item = new Item();
+		item.setBaseSaleTaxExemption(false);
+//		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.calculateTaxes();
+	}
+	@Test(expected = UnsettedTaxesException.class)
+	public void tryDefineItemAndRiseUnsettedTaxesExceptionOnGetTotalTaxAmountNoBaseSalesTax() {
+		Item item = new Item();
+//		item.setBaseSaleTaxExemption(false);
+		item.setImported(true);
+		item.setGoodValue(15.0);
+		item.calculateTaxes();
+	}
+	
+	/*@Test
 	public void trycreateItemImplicit2() {
 		Item item = new Item("bottle of perfume", false, false, 18.99);
 		String check = item.getName() + " " + item.getGoodValue() + " " + item.getImportTax() + " "
@@ -222,5 +298,5 @@ public class ItemTest {
 //		item.setImported(true);
 		item.setGoodValue(15.0);
 		item.getImportTax();
-	}
+	}*/
 }
