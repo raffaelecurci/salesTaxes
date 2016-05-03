@@ -28,5 +28,5 @@ This example follows the following basic conventions:
  | unit test 
 --- | --- | ---
 __resides in:__ | `src/test/java/*Test.java` 
-__executes in Maven phase:__ | test | verify
+__executes in Maven phase:__ | test 
 __handled by Maven plugin:__ | [surefire](http://maven.apache.org/surefire/maven-surefire-plugin/) 
