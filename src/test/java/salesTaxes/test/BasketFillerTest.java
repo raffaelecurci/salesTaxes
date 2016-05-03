@@ -4,32 +4,26 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-/**
- * <p>
- * Unit test for <b>BasketFiller</b>.
- * </p>
- * <p>
- * This class is intended for test purpose of BasketFiller Object.
- * </p>
- */
-
 import org.junit.Test;
 
 import salesTaxes.exc.UnclosedBasketException;
 import salesTaxes.impl.Basket;
 import salesTaxes.impl.BasketFiller;
 
+
 public class BasketFillerTest {
+	
+	
 	@Test
 	public void trycreateBasketFiller() throws Exception, UnclosedBasketException {
-		BasketFiller bf = new BasketFiller( "test.txt","itemCategory.txt");
+		BasketFiller bf = new BasketFiller("test.txt","itemCategory.txt");
 		Basket tmpBasket;
 		String output="";
 
 		while ((tmpBasket = bf.getBasket()) != null) {
 			output+=tmpBasket.toStringValue();
 		}
-		
+		bf.getBasket();
 		String check=	"Output 1:\r\n"+
 						"1 book: 12.49\r\n"+
 						"1 music CD: 16.49\r\n"+
@@ -51,7 +45,9 @@ public class BasketFillerTest {
 						"Sales Taxes: 6.70\r\n"+
 						"Total: 74.68\r\n"+
 						"\r\n";
-
+//		System.out.println(output);
 		assertThat(check, is(equalTo(output)));
 	}
+	
+	
 }
