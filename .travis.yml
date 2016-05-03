@@ -1,4 +1,3 @@
 language: java
 sudo: false
-script: mvn clean test cobertura:cobertura javadoc:javadoc
-
+script: mvn clean test
