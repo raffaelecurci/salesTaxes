@@ -22,31 +22,20 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-<!--     <dependency> -->
-<!--       <groupId>org.powermock</groupId> -->
-<!--       <artifactId>powermock-module-junit4</artifactId> -->
-<!--       <version>1.5.1</version> -->
-<!--       <scope>test</scope> -->
-<!--     </dependency> -->
-<!--     <dependency> -->
-<!--       <groupId>org.powermock</groupId> -->
-<!--       <artifactId>powermock-api-mockito</artifactId> -->
-<!--       <version>1.5.1</version> -->
-<!--       <scope>test</scope> -->
-<!--     </dependency> -->
-<!--     <dependency> -->
-<!--       <groupId>com.github.stefanbirkner</groupId> -->
-<!--       <artifactId>system-rules</artifactId> -->
-<!--       <version>1.4.0</version> -->
-<!--       <scope>test</scope> -->
-<!--       junit:junit-dep is deprecated, and junit:junit replaces it. -->
-<!--       <exclusions> -->
-<!--         <exclusion> -->
-<!--           <groupId>junit</groupId> -->
-<!--           <artifactId>junit-dep</artifactId> -->
-<!--         </exclusion> -->
-<!--       </exclusions> -->
-<!--     </dependency> -->
+    
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-module-junit4</artifactId>
+      <version>1.5.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-api-mockito</artifactId>
+      <version>1.5.1</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
 
