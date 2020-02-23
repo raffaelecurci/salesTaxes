@@ -1,7 +1,7 @@
 salesTaxes
 ===========================
 
-An application that writes and prints out the receipt details for shopping baskets
+An application that writes and prints out the receipt details for shopping baskets. The aim of the project is to use Travis-CI
 
 This example demonstrates:
 
